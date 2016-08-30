@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>News Page</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- Custom Theme files -->
+    <!--<script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0"></script> -->
+    <script src="js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="keywords" content="The News Reporter"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!--webfont-->
+
+</head>
+<body contenteditable="true">
+<!-- header-section-starts -->
+<div class="container">
+    <div class="news-paper">
+        <div class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <h6>THE</h6>
+                        <h1>NEWS <span>REPORTER</span></h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="header-right">
+                <!--Search-->
+                <div class="search">
+                    <form>
+                        <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                            this.value = '';
+                                        }"/>
+                        <input type="submit" value=""/>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <span class="menu"></span>
+        <div class="menu-strip">
+            <ul>
+                <li><a href="index.html">World News</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="movies.html">Culture</a></li>
+                <li><a href="classifieds.html">Classifieds</a></li>
+            </ul>
+        </div>
+        <!-- script for menu -->
+        <script>
+            $("span.menu").click(function () {
+                $(".menu-strip").slideToggle("slow", function () {
+                    // Animation complete.
+                });
+            });
+        </script>
+        <!-- script for menu -->
+        <div class="clearfix"></div>
+        <div class="main-content">
+            <div class="col-md-9 total-news">
+                <div class="slider">
+                    <script src="js/responsiveslides.min.js"></script>
+                    <script>
+                        // You can also use "$(window).load(function() {"
+                        $(function () {
+                            $("#conference-slider").responsiveSlides({
+                                auto: true,
+                                manualControls: '#slider3-pager',
+                            });
+                        });
+                    </script>
+                    <div class="conference-slider">
+                        <!-- Slideshow 3 -->
+                        <ul class="conference-rslide" id="conference-slider">
+                            <li><img src="images/c22.jpg" alt=""/></li>
+                            <li><img src="images/c1.jpg" alt=""/></li>
+                            <li><img src="images/c33.jpg" alt=""/></li>
+                            <li><img src="images/c44.jpg" alt=""/></li>
+                        </ul>
+                        <!-- Slideshow 3 Pager -->
+                        <ul id="slider3-pager">
+                            <li><a href="#"><img src="images/c22.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/c1.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/c33.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/c44.jpg" alt=""/></a></li>
+                        </ul>
+                        <div class="breaking-news-title">
+                            <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                        </div>
+                    </div>
+                    <h5 class="breaking">Breaking news</h5>
+                </div>
+                <div class="posts">
+                    <div class="left-posts">
+                        <div class="world-news">
+                            <div class="main-title-head">
+                                <h3>FROM AROUND THE WORLD</h3>
+                                <a href="singlepage.html">More +</a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="world-news-grids">
+                                <div class="world-news-grid">
+                                    <img src="images/n1.jpg" alt=""/>
+                                    <a href="singlepage.html" class="title"> </a>
+                                    <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                    <a href="singlepage.html">Read More</a>
+                                </div>
+                                <div class="world-news-grid">
+                                    <img src="images/n2.jpg" alt=""/>
+                                    <a href="singlepage.html" class="title"> </a>
+                                    <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                    <a href="singlepage.html">Read More</a>
+                                </div>
+                                <div class="world-news-grid">
+                                    <img src="images/n3.jpg" alt=""/>
+                                    <a href="singlepage.html" class="title"> </a>
+                                    <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                    <a href="singlepage.html">Read More</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="latest-articles">
+                            <div class="main-title-head">
+                                <h3>LATEST ARTICLES</h3>
+                                <a href="singlepage.html">More +</a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="world-news-grids">
+                                <div class="world-news-grid">
+                                    <img src="images/a1.jpg" alt=""/>
+                                    <a href="singlepage.html" class="title"> </a>
+                                    <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                    <a href="singlepage.html">Read More</a>
+                                </div>
+                                <div class="world-news-grid">
+                                    <img src="images/a2.jpg" alt=""/>
+                                    <a href="singlepage.html" class="title"> </a>
+                                    <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                    <a href="singlepage.html">Read More</a>
+                                </div>
+                                <div class="world-news-grid">
+                                    <img src="images/a3.jpg" alt=""/>
+                                    <a href="singlepage.html" class="title"> </a>
+                                    <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                    <a href="singlepage.html">Read More</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="gallery">
+                            <div class="main-title-head">
+                                <h3>GALLERY</h3>
+                                <a href="#">More +</a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="gallery-images">
+                                <div class="course_demo1">
+                                    <ul id="flexiselDemo1">
+                                        <li>
+                                            <a href="single.html"><img src="images/g1.jpg" alt=""/></a>
+                                        </li>
+                                        <li>
+                                            <a href="single.html"><img src="images/g2.jpg" alt=""/></a>
+                                        </li>
+                                        <li>
+                                            <a href="single.html"><img src="images/g3.jpg" alt=""/></a>
+                                        </li>
+                                        <li>
+                                            <a href="single.html"><img src="images/g4.jpg" alt=""/></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
+                                <script type="text/javascript">
+                                    $(window).load(function () {
+                                        $("#flexiselDemo1").flexisel({
+                                            visibleItems: 3,
+                                            animationSpeed: 1000,
+                                            autoPlay: true,
+                                            autoPlaySpeed: 3000,
+                                            pauseOnHover: true,
+                                            enableResponsiveBreakpoints: true,
+                                            responsiveBreakpoints: {
+                                                portrait: {
+                                                    changePoint: 480,
+                                                    visibleItems: 2
+                                                },
+                                                landscape: {
+                                                    changePoint: 640,
+                                                    visibleItems: 2
+                                                },
+                                                tablet: {
+                                                    changePoint: 768,
+                                                    visibleItems: 3
+                                                }
+                                            }
+                                        });
+
+                                    });
+                                </script>
+                                <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+                            </div>
+                            <div class="course_demo1">
+                                <ul id="flexiselDemo">
+                                    <li>
+                                        <a href="single.html"><img src="images/g4.jpg" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="single.html"><img src="images/g5.jpg" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="single.html"><img src="images/g6.jpg" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="single.html"><img src="images/g1.jpg" alt=""/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/>
+                            <script type="text/javascript">
+                                $(window).load(function () {
+                                    $("#flexiselDemo").flexisel({
+                                        visibleItems: 3,
+                                        animationSpeed: 1000,
+                                        autoPlay: true,
+                                        autoPlaySpeed: 3000,
+                                        pauseOnHover: true,
+                                        enableResponsiveBreakpoints: true,
+                                        responsiveBreakpoints: {
+                                            portrait: {
+                                                changePoint: 480,
+                                                visibleItems: 2
+                                            },
+                                            landscape: {
+                                                changePoint: 640,
+                                                visibleItems: 2
+                                            },
+                                            tablet: {
+                                                changePoint: 768,
+                                                visibleItems: 3
+                                            }
+                                        }
+                                    });
+
+                                });
+                            </script>
+                            <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+                        </div>
+                        <div class="tech-news">
+                            <div class="main-title-head">
+                                <h3>LASTEST COMMENTS</h3>
+                                <a href="singlepage.html">More +</a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="tech-news-grids">
+                                <div class="left-tech-news">
+                                    <div class="tech-news-grid span_66">
+                                        <a href="singlepage.html"> </a>
+                                        <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                        <p>by<a href="#"> </a> | 29 comments</p>
+                                    </div>
+                                    <div class="tech-news-grid">
+                                        <a href="singlepage.html"> </a>
+                                        <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                        <p>by<a href="#"> </a> | 29 comments</p>
+                                    </div>
+                                </div>
+                                <div class="right-tech-news">
+                                    <div class="tech-news-grid span_66">
+                                        <a href="singlepage.html"> </a>
+                                        <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                        <p>by<a href="#"> </a> | 29 comments</p>
+                                    </div>
+                                    <div class="tech-news-grid">
+                                        <a href="singlepage.html"> </a>
+                                        <p>aaaaaaaaaaaaaaaaaaaaa</p>
+                                        <p>by<a href="#"> </a> | 29 comments</p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-3 side-bar">
+                <div class="videos">
+                    <div class="video-grid">
+                        <div class="video">
+                            <a href="single.html"><i class="play"></i></a>
+                        </div>
+                        <div class="video-name">
+                            <a href="single.html">aaaaaaaaaaa</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="video-grid">
+                        <div class="video">
+                            <a href="single.html"><i class="play"></i></a>
+                        </div>
+                        <div class="video-name">
+                            <a href="single.html">aaaaaaaaaaa</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="video-grid">
+                        <div class="video">
+                            <a href="single.html"><i class="play"></i></a>
+                        </div>
+                        <div class="video-name">
+                           <a href="single.html">aaaaaaaaaaa</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="video-grid">
+                        <div class="video">
+                            <a href="single.html"><i class="play"></i></a>
+                        </div>
+                        <div class="video-name">
+                            <a href="single.html">aaaaaaaaaa</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <a class="more1" href="single.html">More +</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="popular">
+                    <div class="main-title-head">
+                        <h5>POPULAR</h5>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="popular-news">
+                        <div class="popular-grid">
+                            <i>2016</i>
+                            <p><a href="singlepage.html">Read More</a></p>
+                        </div>
+                        <div class="popular-grid">
+                            <i>2016</i>
+                            <p><a href="singlepage.html">Read More</a></p>
+                        </div>
+                        <div class="popular-grid">
+                            <i>2016</i>
+                            <p><a href="singlepage.html">Read More</a></p>
+                        </div>
+                        <div class="popular-grid">
+                            <i>2016</i>
+                            <p><a href="singlepage.html">Read More</a></p>
+                        </div>
+                        <div class="popular-grid">
+                            <i>2016</i>
+                            <p><a href="singlepage.html">Read More</a></p>
+                        </div>
+                        <a class="more" href="singlepage.html">More +</a>
+                    </div>
+                </div>
+                <div class="clearfix"/>
+            </div>
+            <div class="clearfix"/>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
